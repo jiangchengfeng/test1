@@ -29,12 +29,25 @@ git push --set-upstream 仓库别名 `master`
 
 ```
 
-
-- git init //初始化一个Git仓库
-- git status //查看当前工作区 暂存区 本地仓库的状态
+## 初始化一个Git仓库
+- git init 
+## 查看当前工作区 暂存区 本地仓库的状态
+- git status 
 - git add
-- git commit
+## 添加当前目录所有文件到暂存区
+- git add all /git add . 
+## 删除工作区文件 并且将这次删除放入暂存区
+- git rm [file1][file2]... 
+## 停止追踪指定文件 但该文件会保留在工作区
+- git rm --cached [file]
+## 改名文件 并且将这个改名放入暂存区
+- git mv [file-original][file-renamed]
+## 提交暂存区到仓库去
 - git commit -m "日志说明"
+## 提交工作区自上次commit之后的变化 直接到仓库去
+- git commit -a
+## 如果代码没有任何变化 则用来改写上一次commit的提交信息
+- git commit --amend -m
 - git log
 - gitk
 
