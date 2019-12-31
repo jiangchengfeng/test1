@@ -45,7 +45,7 @@ git push --set-upstream 仓库别名 `master`
 ### 提交暂存区到仓库去
 - git commit -m "日志说明"
 ### 提交工作区自上次commit之后的变化 直接到仓库去
-- git commit -a
+- git commit -a -m
 ### 如果代码没有任何变化 则用来改写上一次commit的提交信息
 - git commit --amend -m
 - git log
@@ -55,15 +55,39 @@ git push --set-upstream 仓库别名 `master`
 
 ### git-bash 常用命令
 
-touch 创建文件
-cat 查看文件
-less 查看大文本文件  q退出
-vi: visual interface 文本编辑 :q退出vi  i 插入 :w保存
-pwd
-ls 查看文件目录
-ls -a  查看隐藏文件
-mkdir
-clear
-rmdir +只能删除空目录
-rm +文件名
-rm -rf 目录名
+- touch 创建文件
+- cat 查看文件
+- less 查看大文本文件  q退出
+- vi: visual interface 文本编辑 :q退出vi  i 插入 :w保存
+- pwd
+- ls 查看文件目录
+- ls -a  查看隐藏文件
+- mkdir
+- clear
+- rmdir +只能删除空目录
+- rm +文件名
+- rm -rf 目录名
+
+### git 分支管理
+```bash
+# 列出所有本地分支
+git branch
+
+# 基于当前分支新建一个分支 但依然保留在当前分支
+git branch [branch-name]
+
+# 基于当前分支新建一个分支 并且切换到该分支
+git checkout -b [branch]
+
+# 切换到指定分支 并更新工作区
+git checkout [branch-name]
+
+# 切换到上一个分支 交替和上一个分支进行切换
+git checkout -
+
+# 合并指定分支到当前分支
+git merge [branch]
+
+# 删除分支
+git branch -d [branch-name]
+```
