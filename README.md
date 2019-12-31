@@ -28,3 +28,31 @@
 git push --set-upstream 仓库别名 `master`
 
 ```
+
+
+- git init //初始化一个Git仓库
+- git status //查看当前工作区 暂存区 本地仓库的状态
+- git add
+- git commit
+- git commit -m "日志说明"
+- git log
+- gitk
+
+操作git的基本工作流程就是先修改文件 然后执行 git add 命令
+git add命令会把文件加入到暂存区 接着就可以执行 git commit命令
+将文件存入文档库 从而形成一次历史记录
+
+## git-bash 常用命令
+
+touch 创建文件
+cat 查看文件
+less 查看大文本文件  q退出
+vi: visual interface 文本编辑 :q退出vi  i 插入 :w保存
+pwd
+ls 查看文件目录
+ls -a  查看隐藏文件
+mkdir
+clear
+rmdir +只能删除空目录
+rm +文件名
+rm -rf 目录名
